@@ -13,15 +13,14 @@
 		<meta property="og:url" content="https://lipsum.com/">
 		<meta property="og:title" content="Lipsum">
 		<meta property="og:description" content="Lorem ipsum.">
-		<meta property="og:image" content="thumbnail.png">
+		<meta property="og:image" content="https://lipsum.com/thumbnail.png">
 		<meta property="twitter:card" content="summary_large_image">
 		<meta property="twitter:url" content="https://lipsum.com/">
 		<meta property="twitter:title" content="Lipsum">
 		<meta property="twitter:description" content="Lorem ipsum.">
-		<meta property="twitter:image" content="thumbnail.png">
+		<meta property="twitter:image" content="https://lipsum.com/thumbnail.png">
 
 		<!-- styles -->
-        <link rel="stylesheet" href="C:\Users\tcp13\Desktop\PLS Library\library\pls-library.css">
 		<link rel="stylesheet" href="styles.css">
 
 		<!-- favicons -->
@@ -52,6 +51,20 @@
 
             <h2>This is a two-column layout.</h2>
             <div class="col-2">
+                <div class="col">
+                    <div class="card">
+                        <p>This is column 1.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <p>This is column 2.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>This is a two-column skewed layout.</h2>
+            <div class="col-2-skewed">
                 <div class="col">
                     <div class="card">
                         <p>This is column 1.</p>
@@ -140,15 +153,6 @@
             <h2>This is a modal.</h2>
             <button type="button" onclick="toggleModal();">Toggle Modal</button>
 
-            <!-- modal -->
-            <div id="modal" role="dialog" class="modal-hidden">
-                <div class="modal-content">
-                    <button aria-label="close modal" type="button" class="close-modal" onclick="toggleModal();">&times;</button>
-                    <h2>This is a modal.</h2>
-                    <p>Lorem ipsum.</p>
-                </div>
-            </div>
-
             <h2>This is an accordion.</h2>
             <button class="accordion" aria-expanded="false">Lorem 1</button>
             <div class="accordion-panel"><p>Lorem ipsum.</p></div>
@@ -160,7 +164,6 @@
             <h2>This is a <span class="tooltip">tooltip<span class="tooltip-text">Lorem ipsum!</span>.</h2>
 
             <p>This is also a <span class="tooltip">tooltip<span class="tooltip-text">Lorem ipsum!</span>.</p>
-
 
         </main>
         <footer>
@@ -178,9 +181,17 @@
                     </div>
                 </div>
             </div>
+
+            <!-- modal -->
+            <div id="modal" role="dialog" class="modal-hidden">
+                <div class="modal-content">
+                    <button aria-label="close modal" type="button" class="close-modal" onclick="toggleModal();">&times;</button>
+                    <h2>This is a modal.</h2>
+                    <p>Lorem ipsum.</p>
+                </div>
+            </div>
             
             <!-- scripts -->
-            <script src="C:\Users\tcp13\Desktop\PLS Library\library\pls-library.js"></script>
             <script src="script.js"></script>
         </footer>
     </body>
